@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+let name = "Vishu" ;
+function App() {   //function based component  
+  return (  // we can return only one element *********
+    // this is JSX 
+    //class is reserved keyword so class --> className
+    //for -->> htmlFor 
+    //tab--> tabIndex 
+      
+    //JSX fragments   we need to return only one tag so wrap it into one tag
+    
+    <>
+    <nav>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </nav><div className="container">
+      <h1>Hello {name}</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos vero modi consequuntur. Soluta neque exercitationem magnam possimus at a quo? Eaque aliquid necessitatibus aut sint nulla eveniet, optio voluptatibus!</p>
     </div>
+
+
+
+    </>
   );
 }
 
